@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+:root{
+    --cinza-escuro: #1D1D1F;
+    --cinza-claro: #939393;
+    --cinza-mais-claro: #F5F5F7;
+    --branco: #fff;
+}
+
+*{
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    display: flex;
+    justify-content: space-around;
+}
+
+body{
+    background-color: var(--cinza-mais-claro);
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+    width: 1170px;
+}
+
+header{
+    margin-bottom: 60px;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecalho__nav{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.cabecalho__nav__menu{
+    list-style-type: none;
+    display: flex;
+    gap: 60px;
+}
+
+.cabecalho__nav__menu__opcao{
+    font-size: 21px;
+    font-weight: 300px;
+    text-decoration: none;
+    color: var(--cinza-escuro);
+}
+
+.cabecalho__nav__menu__wpp{
+    font-size: 21px;
+    font-weight: 300px;
+    text-decoration: none;
+    color: var(--cinza-escuro);
+    padding: 10px 20px 10px 20px;
+    border: 2px solid var(--cinza-escuro);
+    border-radius: 50px;
+}
+
+.cabecalho__nav__menu__wpp:hover{
+    color: var(--cinza-mais-claro);
+    background-color: var(--cinza-escuro);
+}
+
+.portfolio{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.portfolio__projeto{
+    background-color: var(--branco);
+    width: 270px;
+    height: 285px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px rgba(29, 29, 31, 0.15);;
+}
+
+.portfolio__projeto__imagem{
+    margin: 15px 15px 30px 15px;
+    border-radius: 20px;
+}
+
+.portfolio__projeto__nomeprojeto{
+    color: var(--cinza-escuro);
+    margin: 0px 0px 5px 30px;
+    font-size: 21px;
+    font-weight: 400px;
+}
+
+.portfolio__projeto__linguagemprojeto{
+    color: var(--cinza-escuro);
+    margin-left: 30px;
+    font-size: 16px;
+    font-weight: 300;
+}
