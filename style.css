@@ -21,11 +21,11 @@ html{
 body{
     background-color: var(--cinza-mais-claro);
     font-family: 'Poppins', sans-serif;
-    margin-top: 30px;
     width: 1170px;
 }
 
 header{
+    margin-top: 30px;
     margin-bottom: 60px;
 }
 
@@ -70,8 +70,14 @@ header{
 
 .portfolio{
     display: flex;
+    flex-direction: column;
     gap: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 90px;
+}
+
+.portfolio__linha{
+    display: flex;
+    gap: 30px;
 }
 
 .portfolio__projeto{
@@ -99,4 +105,128 @@ header{
     margin-left: 30px;
     font-size: 16px;
     font-weight: 300;
+}
+
+.sobre{
+    display: flex;
+    margin-bottom: 90px;
+}
+
+.sobre__descricao{
+    display: flex;
+    gap: 30px;
+}
+
+.sobre__descricao__icones{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre__descricao__texto{
+    width: 370px;
+}
+
+.sobre__descricao__texto__titulo{
+    color: var(--cinza-escuro);
+    font-size: 34px;
+    font-weight: 400px;
+    margin-bottom: 15px;
+}
+
+.sobre__descricao__texto__paragrafo{
+    color: var(--cinza-escuro);
+    font-size: 16px;
+    font-weight: 300px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+.sobre__descricao__texto__redes{
+    color: var(--cinza-escuro);
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+
+.sobre__descricao__texto__iconesredes, .contato__informacoes__texto__iconesredes{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+}
+
+.contato__wpp{
+    font-size: 21px;
+    font-weight: 300px;
+    text-decoration: none;
+    color: var(--cinza-mais-claro);
+    padding: 20px 15px 20px 15px;
+    border: 2px solid var(--cinza-escuro);
+    border-radius: 50px;
+    background-color: var(--cinza-escuro);
+}
+
+.contato__wpp:hover{
+    color: var(--cinza-escuro);
+    background-color: var(--cinza-mais-claro);
+}
+
+.contato__informacoes{
+    display: flex;
+    width: 700px;
+    height: 340px;
+    background-color: var(--branco);
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px rgba(29, 29, 31, 0.15);;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contato__informacoes__dev{
+    margin-left: 30px;
+}
+
+.contato__informacoes__texto{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-right: 30px;
+}
+
+.contato__informacoes__texto__titulo{
+    color: var(--cinza-escuro);
+    font-size: 21px;
+    font-weight: 400px;
+    line-height: 32px;
+}
+
+.contato__informacoes__texto__paragrafo{
+    color: var(--cinza-escuro);
+    font-size: 21px;
+    font-weight: 300px;
+    line-height: 32px;
+}
+
+.rodape{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.rodape__texto{
+    color: var(--cinza-escuro);
+    font-size: 16px;
+    font-weight: 300px;
+    line-height: 24px;
 }
