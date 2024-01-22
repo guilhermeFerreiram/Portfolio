@@ -37,6 +37,7 @@ body{
     display: flex;
     justify-content: center;
     gap: 130px;
+    z-index: 1000;
 }
 
 .cabecalho__nav{
@@ -171,6 +172,9 @@ main{
     gap: 10px;
 }
 
+.habilidades{
+    z-index: 2;
+}
 
 .habilidades__titulo{
     color: var(--cinza-escuro);
@@ -189,7 +193,7 @@ main{
     height: 184px;
     width: 570px;
     border-radius: 20px;
-    box-shadow: 5px 10px 10px rgba(29, 29, 31, 0.15);
+    border: 1px solid var(--cinza-mais-claro);
 }
 
 #faixa_card{
@@ -197,6 +201,8 @@ main{
 }
 
 .depoimentos__background{
+    margin-top: -97px;
+    z-index: 1;
     background-color: var(--cinza-escuro);
     width: 100vw;
     height: 843px;
@@ -207,6 +213,7 @@ main{
     flex-direction: column;
     gap: 60px;
     align-items: center;
+    margin-top: -308px;
 }
 
 .contato__wpp{
@@ -215,7 +222,7 @@ main{
     text-decoration: none;
     color: var(--cinza-mais-claro);
     padding: 20px 15px 20px 15px;
-    border: 2px solid var(--cinza-escuro);
+    border: 2px solid var(--cinza-claro);
     border-radius: 50px;
     background-color: var(--cinza-escuro);
 }
