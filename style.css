@@ -202,10 +202,58 @@ main{
 
 .depoimentos__background{
     margin-top: -97px;
+    padding-top: 187px;
     z-index: 1;
     background-color: var(--cinza-escuro);
     width: 100vw;
-    height: 843px;
+    height: 656px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.depoimentos__titulo{
+    color: var(--cinza-mais-claro);
+    font-size: 34px;
+    font-weight: 300px;
+    margin-bottom: 60px;
+}
+
+.depoimentos__area__quotes{
+    display: flex;
+    gap: 60px;
+}
+
+.depoimentos__quote{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+}
+
+.depoimentos__quote__titulo{
+    color: var(--cinza-mais-claro);
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.depoimentos__quote__cargo{
+    color: var(--cinza-mais-claro);
+    font-size: 16px;
+    font-weight: 300px;
+    margin-bottom: 30px;
+}
+
+.depoimentos__quote__texto{
+    color: var(--cinza-mais-claro);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    text-align: center;
+}
+
+#QuoteIcon{
+    margin-right: 5px;
 }
 
 .contato{
@@ -222,7 +270,7 @@ main{
     text-decoration: none;
     color: var(--cinza-mais-claro);
     padding: 20px 15px 20px 15px;
-    border: 2px solid var(--cinza-claro);
+    border: 2px solid var(--cinza-mais-claro);
     border-radius: 50px;
     background-color: var(--cinza-escuro);
 }
