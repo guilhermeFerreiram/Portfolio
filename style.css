@@ -189,16 +189,71 @@ main{
 }
 
 .habilidades__cards__card{
+    display: flex;
     background-color: var(--cinza-escuro);
     height: 184px;
     width: 570px;
     border-radius: 20px;
     border: 1px solid var(--cinza-mais-claro);
+    align-items: center;
 }
 
 #faixa_card{
     margin-left: 30px;
+    margin-right: 30px;
 }
+
+#caixa_de_topicos{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.habilidades__cards__card__topico{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--cinza-mais-claro);
+    font-size: 16px;
+    font-weight: 400px;
+}
+
+.habilidades__cards__card__topico__texto{
+    display: flex;
+    justify-content: space-between;
+}
+
+.habilidades__cards__card__topico__barra{
+    height: 3px;
+    background-color: var(--cinza-mais-claro);
+    border-radius: 50px;
+    width: 100%;
+}
+
+#topico1{
+    width: 300px;
+}
+
+#topico2{
+    width: 400px;
+}
+
+#topico3{
+    width: 200px;
+}
+
+#topico4{
+    width: 250px;
+}
+
+#topico5{
+    width: 300px;
+}
+
+#topico6{
+    width: 400px;
+}
+
 
 .depoimentos__background{
     margin-top: -97px;
