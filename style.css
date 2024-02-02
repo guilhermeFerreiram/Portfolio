@@ -92,6 +92,7 @@ main{
 .portfolio__linha{
     display: flex;
     gap: 30px;
+    align-items: center; /*objetivo de posicionar a <div id="sobre"> para melhor visualização>*/
 }
 
 .portfolio__projeto{
@@ -355,6 +356,10 @@ main{
     flex-direction: column;
     gap: 30px;
     margin-right: 30px;
+}
+
+#textoContato{
+    text-decoration: none;
 }
 
 .contato__informacoes__texto__titulo{
