@@ -122,6 +122,43 @@ main{
     font-weight: 300;
 }
 
+.popup{
+    width: 1170px;
+    background-color: var(--branco);
+    border-radius: 40px;
+}
+
+#imagem-popup{
+    margin: 30px;
+}
+
+.popup__nomeprojeto{
+    color: var(--cinza-escuro);
+    margin: 0px 0px 15px 30px;
+    font-size: 21px;
+    font-weight: 400px;
+}
+
+.popup_descricao{
+    color: var(--cinza-escuro);
+    font-size: 16px;
+    font-weight: 300px;
+    line-height: 24px;
+    margin: 0px 0px 15px 30px;
+}
+
+.popup_rodape{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 30px 30px 30px;
+    font-weight: 600;
+}
+
+.popup_rodape_links{
+    display: flex;
+    gap: 15px;
+}
+
 .sobre{
     display: flex;
     margin-bottom: 30px;
