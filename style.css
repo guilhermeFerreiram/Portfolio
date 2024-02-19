@@ -87,6 +87,7 @@ main{
     flex-direction: column;
     gap: 30px;
     margin-bottom: 90px;
+    cursor: pointer;
 }
 
 .portfolio__linha{
@@ -100,7 +101,7 @@ main{
     width: 270px;
     height: 285px;
     border-radius: 20px;
-    box-shadow: 5px 10px 10px rgba(29, 29, 31, 0.15);;
+    box-shadow: 5px 10px 10px rgba(29, 29, 31, 0.15);
 }
 
 .portfolio__projeto__imagem{
@@ -123,9 +124,23 @@ main{
 }
 
 .popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 1170px;
     background-color: var(--branco);
     border-radius: 40px;
+    border: none;
+    outline: none;
+}
+
+.fechar__popup{
+    cursor: pointer;
+}
+
+dialog::backdrop{
+    background-color: rgb(0 0 0 / .15);
 }
 
 #imagem-popup{
