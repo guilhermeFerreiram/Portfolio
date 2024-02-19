@@ -28,7 +28,6 @@ body{
 }
 
 .cabecalho{
-    background-color: rgba(245, 245, 247, 0.8);
     backdrop-filter: blur(10px);
     width: 100vw;
     position: fixed;
@@ -56,14 +55,14 @@ body{
     font-size: 21px;
     font-weight: 300px;
     text-decoration: none;
-    color: var(--cinza-escuro);
+    color: black;
 }
 
 .cabecalho__nav__menu__wpp{
     font-size: 21px;
     font-weight: 300px;
     text-decoration: none;
-    color: var(--cinza-escuro);
+    color: black;
     padding: 10px 20px 10px 20px;
     border: 2px solid var(--cinza-escuro);
     border-radius: 50px;
@@ -93,7 +92,6 @@ main{
 .portfolio__linha{
     display: flex;
     gap: 30px;
-    align-items: center; /*objetivo de posicionar a <div id="sobre"> para melhor visualização>*/
 }
 
 .portfolio__projeto{
@@ -141,6 +139,7 @@ main{
 
 dialog::backdrop{
     background-color: rgb(0 0 0 / .15);
+    backdrop-filter: blur(10px);
 }
 
 #imagem-popup{
