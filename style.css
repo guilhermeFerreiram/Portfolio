@@ -24,18 +24,18 @@ body{
     align-items: center;
     background-color: var(--cinza-mais-claro);
     font-family: 'Poppins', sans-serif;
-    width: 1170px;
+    max-width: 1170px;
 }
 
 .cabecalho{
     backdrop-filter: blur(10px);
     width: 100vw;
     position: fixed;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
     display: flex;
     justify-content: center;
-    gap: 130px;
+    gap: 8.125rem;
     z-index: 1000;
 }
 
@@ -86,7 +86,6 @@ main{
     flex-direction: column;
     gap: 30px;
     margin-bottom: 90px;
-    cursor: pointer;
 }
 
 .portfolio__linha{
@@ -100,6 +99,7 @@ main{
     height: 285px;
     border-radius: 20px;
     box-shadow: 5px 10px 10px rgba(29, 29, 31, 0.15);
+    cursor: pointer;
 }
 
 .portfolio__projeto__imagem{
@@ -175,31 +175,32 @@ dialog::backdrop{
 
 .sobre{
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
 .sobre__descricao{
     display: flex;
-    gap: 30px;
+    gap: 1.875rem;
 }
 
 .sobre__descricao__icones{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.625rem;
     align-items: center;
     justify-content: center;
+    width: 4.25rem;
 }
 
 .sobre__descricao__texto{
-    width: 370px;
+    width: 23.125rem;
 }
 
 .sobre__descricao__texto__titulo{
     color: var(--cinza-escuro);
-    font-size: 34px;
+    font-size: 2.125rem;
     font-weight: 400px;
-    margin-bottom: 15px;
+    margin-bottom: 0.938rem;
 }
 
 .sobre__descricao__texto__paragrafo{
@@ -212,16 +213,16 @@ dialog::backdrop{
 
 .sobre__descricao__texto__redes{
     color: var(--cinza-escuro);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400px;
-    line-height: 24px;
-    margin-bottom: 5px;
+    line-height: 1.4rem;
+    margin-bottom: 0.313rem;
 }
 
 .sobre__descricao__texto__iconesredes, .contato__informacoes__texto__iconesredes{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem;
 }
 
 .habilidades{
@@ -230,7 +231,7 @@ dialog::backdrop{
 
 .habilidades__titulo{
     color: var(--cinza-escuro);
-    font-size: 34px;
+    font-size: 2.125rem;
     font-weight: 400px;
     margin: 0px 0px 15px 97px;
 }
@@ -243,8 +244,8 @@ dialog::backdrop{
 .habilidades__cards__card{
     display: flex;
     background-color: var(--cinza-escuro);
-    height: 184px;
-    width: 570px;
+    height: 11.5rem;
+    width: 35.625rem;
     border-radius: 20px;
     border: 1px solid var(--cinza-mais-claro);
     align-items: center;
@@ -256,6 +257,7 @@ dialog::backdrop{
 }
 
 #caixa_de_topicos{
+    width: 25rem;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -266,7 +268,7 @@ dialog::backdrop{
     flex-direction: column;
     gap: 15px;
     color: var(--cinza-mais-claro);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400px;
 }
 
@@ -283,27 +285,27 @@ dialog::backdrop{
 }
 
 #topico1{
-    width: 300px;
+    width: 80%;
 }
 
 #topico2{
-    width: 400px;
+    width: 100%;
 }
 
 #topico3{
-    width: 200px;
+    width: 75%;
 }
 
 #topico4{
-    width: 250px;
+    width: 60%;
 }
 
 #topico5{
-    width: 300px;
+    width: 80%;
 }
 
 #topico6{
-    width: 400px;
+    width: 100%;
 }
 
 
@@ -389,8 +391,8 @@ dialog::backdrop{
 
 .contato__informacoes{
     display: flex;
-    width: 700px;
-    height: 340px;
+    width: 43.75rem;
+    height: 21.25rem;
     background-color: var(--branco);
     border-radius: 20px;
     box-shadow: 5px 10px 10px rgba(29, 29, 31, 0.15);
@@ -399,14 +401,14 @@ dialog::backdrop{
 }
 
 .contato__informacoes__dev{
-    margin-left: 30px;
+    margin-left: 1.875rem;
 }
 
 .contato__informacoes__texto{
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    margin-right: 30px;
+    gap: 1.875rem;
+    margin-right: 1.875rem;
 }
 
 #textoContato{
@@ -415,16 +417,16 @@ dialog::backdrop{
 
 .contato__informacoes__texto__titulo{
     color: var(--cinza-escuro);
-    font-size: 21px;
+    font-size: 1.313rem;
     font-weight: 400px;
-    line-height: 32px;
+    line-height: 2rem;
 }
 
 .contato__informacoes__texto__paragrafo{
     color: var(--cinza-escuro);
-    font-size: 21px;
+    font-size: 1.313rem;
     font-weight: 300px;
-    line-height: 32px;
+    line-height: 2rem;
 }
 
 .rodape{
@@ -439,4 +441,101 @@ dialog::backdrop{
     font-size: 16px;
     font-weight: 300px;
     line-height: 24px;
+}
+
+@media (max-width: 1220px){
+    #imagem-assinatura{
+        display: none;
+    }
+
+    .habilidades__cards{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 800px){
+    #faixa_card{
+        display: none;
+    }
+
+    .habilidades__cards__card{
+        justify-content: center;
+    }
+
+    .depoimentos__area__quotes{
+        flex-direction: column;
+    }
+
+    .contato{
+        margin-top: 30px;
+    }
+
+    .contato__wpp{
+        border-color: var(--cinza-escuro);
+    }
+
+    .contato__wpp:hover{
+        border-color: var(--cinza-escuro);
+    }
+
+    .contato__informacoes{
+        width: 20.625rem;
+        justify-content: center;
+    }
+
+    .contato__informacoes__texto{
+        margin-right: 0px;
+        align-items: center;
+    }
+
+    .contato__informacoes__texto__titulo{
+        text-align: center;
+    }
+
+    .contato__informacoes__texto__paragrafo{
+        text-align: center;
+    }
+
+    .contato__informacoes__texto__iconesredes{
+        justify-content: center;
+    }
+
+    .contato__informacoes__dev{
+        display: none;
+    }
+}
+
+@media (max-width: 650px){
+    .sobre__descricao__icones{
+        display: none;
+    }
+
+    .sobre__descricao__texto__titulo{
+        text-align: center;
+    }
+
+    .sobre__descricao__texto__paragrafo{
+        text-align: center;
+    }
+
+    .sobre__descricao__texto__redes{
+        text-align: center;
+    }
+
+    .sobre__descricao__texto__iconesredes{
+        justify-content: center;
+    }
+
+    .habilidades__titulo{
+        margin: 0px 0px 15px 0px;
+        text-align: center;
+    }
+
+    .habilidades__cards__card{
+        width: 360px;
+    }
+
+    #caixa_de_topicos{
+        width: 300px;
+    }
 }
