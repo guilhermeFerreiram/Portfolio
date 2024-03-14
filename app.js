@@ -15,3 +15,13 @@ function exibirPopup(nomeProjeto, descricaoProjeto, imagemSrc) {
 function fecharPopup() {
     dialog.close();
 }
+
+function menuShow() {
+    let menuMobile = document.querySelector('.mobile__nav');
+    if (menuMobile.classList.contains('open')){
+        menuMobile.classList.remove('open');
+    }
+    else{
+        menuMobile.classList.add('open');
+    }
+}
