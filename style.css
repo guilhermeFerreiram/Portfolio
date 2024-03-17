@@ -148,7 +148,6 @@ main{
     height: 285px;
     border-radius: 20px;
     box-shadow: 5px 10px 10px rgba(29, 29, 31, 0.15);
-    cursor: pointer;
     transition: 2s;
 }
 
@@ -162,6 +161,13 @@ main{
     margin: 0px 0px 5px 30px;
     font-size: 21px;
     font-weight: 400px;
+}
+
+.portfolio__projeto__repositorio{
+    color: var(--cinza-escuro);
+    margin-left: 30px;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 .portfolio__projeto__linguagemprojeto{
@@ -237,6 +243,7 @@ dialog::backdrop{
 }
 
 #imagem-popup{
+    width: 1110px;
     margin: 30px;
 }
 
@@ -252,7 +259,7 @@ dialog::backdrop{
     font-size: 16px;
     font-weight: 300px;
     line-height: 24px;
-    margin: 0px 0px 15px 30px;
+    margin: 0px 30px 15px 30px;
 }
 
 .popup_rodape{
@@ -262,9 +269,12 @@ dialog::backdrop{
     font-weight: 600;
 }
 
-.popup_rodape_links{
-    display: flex;
-    gap: 15px;
+.popup_rodape_links a{
+    text-decoration: none;
+    color: var(--cinza-escuro);
+    font-size: 16px;
+    font-weight: 300px;
+    line-height: 24px;
 }
 
 .sobre{
