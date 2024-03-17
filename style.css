@@ -118,15 +118,27 @@ main{
 
 .portfolio{
     margin-top: 170px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-bottom: 90px;
+    margin-bottom: 60px;
 }
 
 .portfolio__linha{
+    width: 1185px;
+    overflow: hidden;
     display: flex;
     gap: 30px;
+    padding-bottom: 15px;
+}
+
+.portfolio__linha input{
+    display: none;
+}
+
+#radio1:checked ~ .p1{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .p1{
+    margin-left: -1200px;
 }
 
 .portfolio__projeto{
@@ -136,6 +148,7 @@ main{
     border-radius: 20px;
     box-shadow: 5px 10px 10px rgba(29, 29, 31, 0.15);
     cursor: pointer;
+    transition: 2s;
 }
 
 .portfolio__projeto__imagem{
@@ -155,6 +168,26 @@ main{
     margin-left: 30px;
     font-size: 16px;
     font-weight: 300;
+}
+
+.portfolio__navigation{
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.portfolio__navigation label{
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--cinza-escuro);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.portfolio__navigation label:hover{
+    background-color: var(--cinza-escuro);
 }
 
 .popup{
