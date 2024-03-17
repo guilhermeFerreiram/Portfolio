@@ -379,27 +379,27 @@ dialog::backdrop{
 }
 
 #topico1{
-    width: 80%;
+    width: 90%;
 }
 
 #topico2{
-    width: 100%;
-}
-
-#topico3{
-    width: 75%;
-}
-
-#topico4{
-    width: 60%;
-}
-
-#topico5{
     width: 80%;
 }
 
-#topico6{
+#topico3{
+    width: 70%;
+}
+
+#topico4{
+    width: 90%;
+}
+
+#topico5{
     width: 100%;
+}
+
+#topico6{
+    width: 95%;
 }
 
 
@@ -409,7 +409,7 @@ dialog::backdrop{
     z-index: 1;
     background-color: var(--cinza-escuro);
     width: 100vw;
-    height: 41rem;
+    height: 47rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -549,6 +549,11 @@ dialog::backdrop{
     .mobile__nav__icon{
         display: block;
         cursor: pointer;
+    }
+
+    .mobile__nav__icon button{
+        all: initial;
+        background-color: transparent;
     }
 
     .open{
