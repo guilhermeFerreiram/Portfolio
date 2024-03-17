@@ -583,12 +583,28 @@ dialog::backdrop{
         display: none;
     }
 
+    .popup{
+        width: 760px;
+    }
+
+    #imagem-popup{
+        width: 700px;
+    }
+
     .habilidades__cards{
         flex-direction: column;
     }
 }
 
 @media (max-width: 800px){
+    .popup{
+        width: 572px;
+    }
+
+    #imagem-popup{
+        width: 512px;
+    }
+
     #faixa_card{
         display: none;
     }
@@ -701,6 +717,19 @@ dialog::backdrop{
         display: block;
     }
 
+    .popup{
+        width: 370px;
+    }
+
+    #imagem-popup{
+        width: 310px;
+    }
+
+    .popup_rodape{
+        flex-direction: column;
+        gap: 15px;
+    }
+
     .sobre__descricao__icones{
         display: none;
     }
@@ -736,6 +765,15 @@ dialog::backdrop{
 }
 
 @media (max-width: 380px){
+    .popup{
+        width: 300px;
+    }
+
+    #imagem-popup{
+        width: 240px;
+    }
+
+
     .sobre__descricao__texto{
         width: 18.75rem;
     }
