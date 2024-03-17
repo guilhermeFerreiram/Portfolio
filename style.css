@@ -122,6 +122,7 @@ main{
 }
 
 .portfolio__linha{
+    margin-left: 15px;
     width: 1185px;
     overflow: hidden;
     display: flex;
@@ -188,6 +189,30 @@ main{
 
 .portfolio__navigation label:hover{
     background-color: var(--cinza-escuro);
+}
+
+#label3{
+    display: none;
+}
+
+#label4{
+    display: none;
+}
+
+#label5{
+    display: none;
+}
+
+#label6{
+    display: none;
+}
+
+#label7{
+    display: none;
+}
+
+#label8{
+    display: none;
 }
 
 .popup{
@@ -530,6 +555,30 @@ dialog::backdrop{
         display: block;
     }
 
+    .portfolio__linha{
+        width: 580px;
+    }
+    
+    #radio2:checked ~ .p1{
+        margin-left: -600px;
+    }
+
+    #radio3:checked ~ .p1{
+        margin-left: -1200px;
+    }
+
+    #radio4:checked ~ .p1{
+        margin-left: -1800px;
+    }
+
+    #label3{
+        display: block;
+    }
+    
+    #label4{
+        display: block;
+    }
+
     #imagem-assinatura{
         display: none;
     }
@@ -598,6 +647,58 @@ dialog::backdrop{
 
     .mobile__nav__icon{
         margin-left: 250px;
+    }
+
+    .portfolio{
+        margin-top: 90px;
+    }
+
+    .portfolio__linha{
+        width: 285px;
+    }
+
+    #radio2:checked ~ .p1{
+        margin-left: -300px;
+    }
+
+    #radio3:checked ~ .p1{
+        margin-left: -600px;
+    }
+
+    #radio4:checked ~ .p1{
+        margin-left: -900px;
+    }
+
+    #radio5:checked ~ .p1{
+        margin-left: -1200px;
+    }
+
+    #radio6:checked ~ .p1{
+        margin-left: -1500px;
+    }
+
+    #radio7:checked ~ .p1{
+        margin-left: -1800px;
+    }
+
+    #radio8:checked ~ .p1{
+        margin-left: -2100px;
+    }
+
+    #label5{
+        display: block;
+    }
+
+    #label6{
+        display: block;
+    }
+
+    #label7{
+        display: block;
+    }
+
+    #label8{
+        display: block;
     }
 
     .sobre__descricao__icones{
